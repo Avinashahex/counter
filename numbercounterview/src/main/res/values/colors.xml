@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color">#933EC5</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="tint_color">#933EC5</color>
+</resources>

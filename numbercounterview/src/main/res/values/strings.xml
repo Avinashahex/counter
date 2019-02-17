@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NumberCounterView</string>
+    <string name="max_value">Max Value cannot be less than Initial value</string>
+</resources>
