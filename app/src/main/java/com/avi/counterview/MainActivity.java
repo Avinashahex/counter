@@ -1,16 +1,14 @@
-package com.app.counterview;
+package com.avi.counterview;
 
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.app.numbercounterview.CounterException;
-import com.app.numbercounterview.NumberCounterView;
-import com.app.numbercounterview.OnValueChangeListener;
+import com.avi.numbercounterview.NumberCounterView;
+import com.avi.numbercounterview.OnValueChangeListener;
 
 public class MainActivity extends AppCompatActivity {
 

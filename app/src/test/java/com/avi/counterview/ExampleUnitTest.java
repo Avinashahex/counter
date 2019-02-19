@@ -1,4 +1,4 @@
-package com.app.counterview;
+package com.avi.counterview;
 
 import org.junit.Test;
 

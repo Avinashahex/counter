@@ -1,4 +1,4 @@
-package com.app.numbercounterview;
+package com.avi.numbercounterview;
 
 import org.junit.Test;
 

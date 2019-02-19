@@ -1,4 +1,4 @@
-package com.app.numbercounterview;
+package com.avi.numbercounterview;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

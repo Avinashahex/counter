@@ -1,4 +1,4 @@
-package com.app.numbercounterview;
+package com.avi.numbercounterview;
 
 public class CounterException extends Exception {
 

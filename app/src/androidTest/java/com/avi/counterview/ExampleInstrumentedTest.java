@@ -1,4 +1,4 @@
-package com.app.counterview;
+package com.avi.counterview;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

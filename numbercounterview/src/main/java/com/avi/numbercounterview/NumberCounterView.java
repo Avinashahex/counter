@@ -1,15 +1,13 @@
-package com.app.numbercounterview;
+package com.avi.numbercounterview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -23,7 +21,7 @@ public class NumberCounterView extends RelativeLayout {
     private int maxValue;
     private int previousValue;
 
-    private LinearLayout counterLayout;
+    private RelativeLayout counterLayout;
     private TextView txtCounter;
     private ImageView imgAdd;
     private ImageView imgSub;
@@ -59,7 +57,7 @@ public class NumberCounterView extends RelativeLayout {
         maxValue = typedArray.getInt(R.styleable.NumberCounterView_maxValue, Integer.MAX_VALUE);
 
         Drawable backGroundDrawable = typedArray.getDrawable(R.styleable.NumberCounterView_backgroundDrawable);
-        int backGroundColor = typedArray.getColor(R.styleable.NumberCounterView_backgroundColor, ContextCompat.getColor(context, R.color.transparent));
+        int backGroundColor = typedArray.getColor(R.styleable.NumberCounterView_backgroundColor, getResources().getColor(R.color.tint_color));
 
         Drawable backgroundDrawableAdd = typedArray.getDrawable(R.styleable.NumberCounterView_backgroundDrawableAdd);
         Drawable backgroundDrawableSub = typedArray.getDrawable(R.styleable.NumberCounterView_backgroundDrawableSub);
@@ -81,6 +79,11 @@ public class NumberCounterView extends RelativeLayout {
 
         if (backGroundDrawable == null) {
             backGroundDrawable = getResources().getDrawable(R.drawable.round_circle_lib);
+        }
+
+
+        if(backGroundColor==0){
+            backGroundColor=getResources().getColor(R.color.tint_color);
         }
 
         counterLayout = findViewById(R.id.rl_number_holder);
