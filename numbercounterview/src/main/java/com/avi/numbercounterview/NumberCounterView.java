@@ -8,6 +8,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -21,7 +22,7 @@ public class NumberCounterView extends RelativeLayout {
     private int maxValue;
     private int previousValue;
 
-    private RelativeLayout counterLayout;
+    private LinearLayout counterLayout;
     private TextView txtCounter;
     private ImageView imgAdd;
     private ImageView imgSub;
@@ -97,7 +98,7 @@ public class NumberCounterView extends RelativeLayout {
 
         txtCounter.setText(String.valueOf(initialNumber));
         txtCounter.setTextColor(textColor);
-        txtCounter.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
+        txtCounter.setTextSize(TypedValue.COMPLEX_UNIT_DIP, textSize);
         txtCounter.setPadding(paddingCounterLeft, 0, paddingCounterRight, 0);
 
         imgAdd.setImageDrawable(imageResourceAdd);

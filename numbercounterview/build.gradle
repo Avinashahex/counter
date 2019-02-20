@@ -11,7 +11,7 @@ ext{
 
     publishedGroupId='com.avi.numbercounterview'
     artifact='counterview'
-    libraryVersion='1.0.3'
+    libraryVersion='1.0.5'
 
     libraryDescription='A Material CounterView to manage quantity of product selected'
     siteUrl='https://github.com/Avinashahex/counter'
